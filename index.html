@@ -5,13 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>E-Learning</title>
-     <!-- font family -->
+    <!-- font family -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
-        <!-- stylesheet -->
+    <!-- stylesheet -->
     <link href="./CSS/style.css" rel="stylesheet">
 
 </head>
@@ -411,40 +411,42 @@
                     est. In illo veritatis modi porro, exercitationem at, possimus eum unde, odio provident sapiente
                     ducimus nisi?</p>
                 <div class="price-type">
-                    <button>Monthly</button>
-                    <button>Yearly</button>
+                    <button class="month">Monthly</button>
+                    <button class="year">Yearly</button>
                 </div>
                 <div class="p-cards">
                     <div class="in-p-cards">
-                        <button>Free Plan</button>
+                        <button class="plan">Free Plan</button>
                         <h3>$0/month</h3>
                         <div class="features">
-                            <h4>Available features</h4>
+                            <h4>Available Features</h4>
                             <ul>
-                                <li>Access to selected free courses.</li>
-                                <li>Limited course materials and resources.</li>
-                                <li>Basic community support.</li>
-                                <li>No certification upon completion.</li>
-                                <li>Ad-supported platform.</li>
-                                <li>Access to exclusive Pro Plan community forums.</li>
-                                <li>Early access to new courses and updates.</li>
+                                <li><i class="fa-solid fa-check"></i>Access to selected free courses.</li>
+                                <li><i class="fa-solid fa-check"></i> Limited course materials and resources.</li>
+                                <li><i class="fa-solid fa-check"></i>Basic community support.</li>
+                                <li><i class="fa-solid fa-check"></i> No certification upon completion.</li>
+                                <li><i class="fa-solid fa-check"></i> Ad-supported platform.</li>
+                                <li><i class="fa-solid fa-xmark"></i> Access to exclusive Pro Plan community forums.
+                                </li>
+                                <li><i class="fa-solid fa-xmark"></i> Early access to new courses and updates.</li>
                             </ul>
                             <button class="start">Get Started</button>
                         </div>
                     </div>
                     <div class="in-p-cards">
-                        <button>Pro Plan</button>
+                        <button class="plan">Pro Plan</button>
                         <h3>$79/month</h3>
                         <div class="features">
-                            <h4>Available features</h4>
+                            <h4>Available Features</h4>
                             <ul>
-                                <li>Unlimited access to all courses.</li>
-                                <li>Unlimited course materials and resources.</li>
-                                <li>Priority support from instructors.</li>
-                                <li>Course completion certificates.</li>
-                                <li>Ad-free experience.</li>
-                                <li>Access to exclusive Pro Plan community forums.</li>
-                                <li>Early access to new courses and updates.</li>
+                                <li><i class="fa-solid fa-check"></i> Unlimited access to all courses.</li>
+                                <li><i class="fa-solid fa-check"></i> Unlimited course materials and resources.</li>
+                                <li><i class="fa-solid fa-check"></i> Priority support from instructors.</li>
+                                <li><i class="fa-solid fa-check"></i> Course completion certificates.</li>
+                                <li><i class="fa-solid fa-check"></i> Ad-free experience.</li>
+                                <li><i class="fa-solid fa-check"></i> Access to exclusive Pro Plan community forums.
+                                </li>
+                                <li><i class="fa-solid fa-check"></i> Early access to new courses and updates.</li>
                             </ul>
                             <button class="start">Get Started</button>
                         </div>
@@ -459,28 +461,39 @@
                 <div class="questions">
                     <ul>
                         <li>
-                            <h3>Can i enroll in multiple cources at once?</h3>
-                                <i class="fa-solid fa-x"></i>
-                                <hr>
-                                <p>Absolutely! You can enroll in multiple courses simultaneously and access them at your
-                                    convenience.</p>
-                                <button>Enrolement Process for Different Cources</button>
+                            <div class="q-nav-first">
+                                <h3>Can I enroll in multiple cources at once?</h3>
+                                <i class="fa-solid fa-xmark"></i>
+                            </div>
+                            <hr>
+                            <p>Absolutely! You can enroll in multiple courses simultaneously and access them at your
+                                convenience.</p>
+                            <button class="btn-first">Enrolement Process for Different Cources <i
+                                    class="fa-solid fa-arrow-right"></i></button>
                         </li>
                         <li>
-                            <h3>What kind of support can I expect from instructors?</h3>
-                            <i class="fa-solid fa-plus"></i>
+                            <div class="q-nav-right">
+                                <h3>What kind of support can I expect from instructors?</h3>
+                                <i class="fa-solid fa-plus"></i>
+                            </div>
                         </li>
                         <li>
-                            <h3>Are the courses self-paced or do they have specific start and end dates?</h3>
-                            <i class="fa-solid fa-plus"></i>
+                            <div class="q-nav-right">
+                                <h3>Are the courses self-paced or do they have specific start and end dates?</h3>
+                                <i class="fa-solid fa-plus"></i>
+                            </div>
                         </li>
                         <li>
-                            <h3>Are there any prerequisites for the courses?</h3>
-                            <i class="fa-solid fa-plus"></i>
+                            <div class="q-nav-right">
+                                <h3>Are there any prerequisites for the courses?</h3>
+                                <i class="fa-solid fa-plus"></i>
+                            </div>
                         </li>
                         <li>
-                            <h3>Can I download the course materials for offline access?</h3>
-                            <i class="fa-solid fa-plus"></i>
+                            <div class="q-nav-right">
+                                <h3>Can I download the course materials for offline access?</h3>
+                                <i class="fa-solid fa-plus"></i>
+                            </div>
                         </li>
                     </ul>
                 </div>
@@ -493,22 +506,24 @@
                     <p><i class="fa-solid fa-phone"></i> + 91 91813 23 2309</p>
                     <p><i class="fa-solid fa-location-dot"></i> Somewhere in the World</p>
                 </div>
-                <div class="fotter-home">
-                    <h2>Home</h2>
-                    <ul>
-                        <li><a href="#benefits">Benefits</a></li>
-                        <li><a href="#cources">Our Cources</a></li>
-                        <li><a href="#Testimonials">Our Testimonials</a></li>
-                        <li><a href="#questions">Our FAQ's</a></li>
-                    </ul>
-                </div>
-                <div class="footer-about">
-                    <h2>About Us</h2>
-                    <ul>
-                        <li>Company</li>
-                        <li>Achievements</li>
-                        <li>Our Goals</li>
-                    </ul>
+                <div class="fotter-two-nav">
+                    <div class="fotter-home">
+                        <h2>Home</h2>
+                        <ul>
+                            <li><a href="#benefits">Benefits</a></li>
+                            <li><a href="#cources">Our Cources</a></li>
+                            <li><a href="#Testimonials">Our Testimonials</a></li>
+                            <li><a href="#questions">Our FAQ's</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-about">
+                        <h2>About Us</h2>
+                        <ul>
+                            <li>Company</li>
+                            <li>Achievements</li>
+                            <li>Our Goals</li>
+                        </ul>
+                    </div>
                 </div>
                 <div class="fotter-profiles">
                     <h2>Social Profiles</h2>
@@ -516,7 +531,7 @@
                     <i class="fa-brands fa-twitter"></i>
                     <i class="fa-brands fa-linkedin"></i>
                 </div>
-                <p>&copy; 2023 Skillbridge. All rights reserved. </p>
+                <p class="copy-right">&copy; 2023 Skillbridge. All rights reserved. </p>
             </div>
         </footer>
     </div>
