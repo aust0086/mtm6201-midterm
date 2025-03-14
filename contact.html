@@ -1,27 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <!-- font family -->
-     <link rel="preconnect" href="https://fonts.googleapis.com">
-     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-     <link
-         href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-         rel="stylesheet">
-         <!-- stylesheet -->
-     <link href="./CSS/style.css" rel="stylesheet">
+    <!-- font family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <!-- stylesheet -->
+    <link href="./CSS/style.css" rel="stylesheet">
     <title>Contact</title>
 </head>
+
 <body>
+    <!-- container for whole page -->
     <div class="container-contact">
         <header>
+             <!-- skip links -->
+             <div class="skip-link">
+                <li><a href=./index.html>Home</a></li>
+                <li><a href="./about.html">About Us</a></li>
+             </div>
+            <!-- add at top of the page -->
             <div class="add">
                 <h1>
                     Free Courses <i class="fa-solid fa-star"></i> Sale Ends Soon, Get It Now <i
                         class="fa-solid fa-arrow-right-long"></i>
                 </h1>
             </div>
+            <!-- navagation -->
             <nav class="head-nav">
                 <ul class="left">
                     <!-- logo -->
@@ -48,19 +58,26 @@
                 </ul>
 
             </nav>
+            <!-- info at top -->
             <h2>Contact Us</h2>
-            <p>Welcome to SkillBridge's Pricing Plan page, where we offer two comprehensive options to cater to your needs: Free and Pro. We believe in providing flexible and affordable pricing options for our services. Whether you're an individual looking to enhance your skills or a business seeking professional development solutions, we have a plan that suits you. Explore our pricing options below and choose the one that best fits your requirements.</p>
+            <p>Welcome to SkillBridge's Pricing Plan page, where we offer two comprehensive options to cater to your
+                needs: Free and Pro. We believe in providing flexible and affordable pricing options for our services.
+                Whether you're an individual looking to enhance your skills or a business seeking professional
+                development solutions, we have a plan that suits you. Explore our pricing options below and choose the
+                one that best fits your requirements.</p>
+            <hr>
         </header>
         <main>
+            <!-- form -->
             <div class="main-contact">
                 <fieldset>
-                    <form> 
+                    <form>
                         <label for="first-name">First Name</label>
                         <input type="text" id="first-name" placeholder="Enter Your First Name">
 
                         <label for="last-name">Last Name</label>
-                        <input type="text" id="last=name" placeholder="Enter Your Last Name">
-                        
+                        <input type="text" id="last-name" placeholder="Enter Your Last Name">
+
                         <label for="email">Email</label>
                         <input type="email" id="email" placeholder="Enter Your Email">
 
@@ -68,21 +85,22 @@
                         <input type="tel" id="phone" placeholder="Enter Your Phone Number">
 
                         <label for="subject">Subject</label>
-                        <input type="type" id="subject" placeholder="Enter your subject">
+                        <input type="text" id="subject">
 
                         <label for="Message">Message</label>
                         <textarea id="Message" placeholder="Enter Your Message"></textarea>
-                        <button>Send Your Message</button>
+                        <button class="send">Send Your Message</button>
                     </form>
                 </fieldset>
             </div>
+            <!-- contact info -->
             <div class="card-info">
                 <div class="in-card-info">
-                    <i class="fa-solid fa-envelope"></i> 
+                    <i class="fa-solid fa-envelope"></i>
                     <p>support@skillbridge.com</p>
                 </div>
                 <div class="in-card-info">
-                    <i class="fa-solid fa-phone"></i> 
+                    <i class="fa-solid fa-phone"></i>
                     <p>+91 00000 00000</p>
                 </div>
                 <div class="in-card-info">
@@ -95,33 +113,45 @@
                     <i class="fa-brands fa-linkedin"></i>
                     <p>Social Profiles</p>
                 </div>
-
-
             </div>
         </main>
+        <!-- fotter -->
         <footer>
             <div class="fotter">
                 <div class="fotter-contact">
+                    <p>
+                        <svg width="41" height="40" viewBox="0 0 41 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="0.666718" width="40" height="40" rx="6" fill="#FF9500" />
+                            <path
+                                d="M8.93918 32.3457L16.9639 24.321H24.9886V16.2963L33.0133 24.321L24.9886 32.3457H8.93918Z"
+                                fill="white" />
+                            <path
+                                d="M8.93918 16.2963L16.9639 24.321V16.2963H24.9886L33.0133 8.27161H16.9639L8.93918 16.2963Z"
+                                fill="white" />
+                        </svg>
+                    </p>
                     <p><i class="fa-solid fa-envelope"></i> hello@skillbridge.com</p>
                     <p><i class="fa-solid fa-phone"></i> + 91 91813 23 2309</p>
                     <p><i class="fa-solid fa-location-dot"></i> Somewhere in the World</p>
                 </div>
-                <div class="fotter-home">
-                    <h2>Home</h2>
-                    <ul>
-                        <li>Benefits</li>
-                        <li> Cources</li>
-                        <li>Our Testimonials</li>
-                        <li>Our FAQ's</li>
-                    </ul>
-                </div>
-                <div class="footer-about">
-                    <h2>About Us</h2>
-                    <ul>
-                        <li>Company</li>
-                        <li>Achievements</li>
-                        <li>Our Goals</li>
-                    </ul>
+                <div class="fotter-two-nav">
+                    <div class="fotter-home">
+                        <h2>Home</h2>
+                        <ul>
+                            <li><a href="#benefits">Benefits</a></li>
+                            <li><a href="#cources">Our Cources</a></li>
+                            <li><a href="#Testimonials">Our Testimonials</a></li>
+                            <li><a href="#questions">Our FAQ's</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-about">
+                        <h2>About Us</h2>
+                        <ul>
+                            <li>Company</li>
+                            <li>Achievements</li>
+                            <li>Our Goals</li>
+                        </ul>
+                    </div>
                 </div>
                 <div class="fotter-profiles">
                     <h2>Social Profiles</h2>
@@ -129,11 +159,11 @@
                     <i class="fa-brands fa-twitter"></i>
                     <i class="fa-brands fa-linkedin"></i>
                 </div>
-                <p>&copy; 2023 Skillbridge. All rights reserved. </p>
+                <p class="copy-right">&copy; 2023 Skillbridge. All rights reserved. </p>
             </div>
         </footer>
         <!-- java for icons  -->
-    <script src="https://kit.fontawesome.com/0212b9125f.js" crossorigin="anonymous"></script
+        <script src="https://kit.fontawesome.com/0212b9125f.js" crossorigin="anonymous"></script>
     </div>
 </body>
 </html>

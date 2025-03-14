@@ -7,7 +7,15 @@ html {
     background-color: #F1F1F3;
     font-family: "Be Vietnam Pro", sans-serif;
     margin: auto 0px;
+    
 }
+
+.container-index{
+    .banner,#cards,main{
+        margin:20px;
+    }
+}
+
 
 .add {
     background-color: #FF9500;
@@ -15,6 +23,11 @@ html {
     text-align: center;
     font-size: 10px;
     border-radius: 7px;
+}
+
+.explore {
+    background-color: #FF9500;
+    color: white;
 }
 
 nav li {
@@ -27,6 +40,20 @@ nav li {
     justify-content: space-between;
 
 }
+.skip-link li{
+    list-style-type: none;
+    }
+.skip-link a{
+    position: absolute;
+    top:-2rem;
+    background-color: black;
+    color: aliceblue;
+  }
+  .skip-link a:focus{
+    top:0;
+    color:white;
+    background-color: black;    
+  }
 
 .right {
     text-align: right;
@@ -37,6 +64,12 @@ nav li {
 
 .right li {
     display: inline-block;
+}
+
+.banner{
+    button{
+        margin-bottom: 20px;
+    }
 }
 
 /* next 6 are different nav states */
@@ -138,6 +171,7 @@ button {
     background-color: #F1F1F3;
     padding: 10px 10px;
     justify-items: right;
+    color: #FF9500;
 }
 
 iframe {
@@ -224,7 +258,6 @@ iframe {
 }
 
 .in-p-cards {
-    /* background-color: #FCFCFD; */
     padding: 20px;
     background-color: #98989A;
     margin-bottom: 20px;
@@ -312,15 +345,19 @@ footer {
 footer ul li {
     list-style-type: none;
 }
-footer ul{
-    padding:0px;
+
+footer ul {
+    padding: 0px;
 }
+
 .fotter-two-nav {
     display: flex;
 }
-.fotter-home{
-    padding:0px 20px;
+
+.fotter-home {
+    padding: 0px 20px;
 }
+
 .fa-brands {
     background-color: #F1F1F3;
     padding: 10px 10px;
@@ -330,9 +367,143 @@ footer ul{
     text-align: center;
 }
 
+/* about us */
+.container-about {
+    background-color: #F1F1F3;
+    
+}
+
+.title {
+    margin: 0 20px;
+}
+
+#achievements {
+    margin: 0 20px;
+    border-radius: 5px;
+}
+
+.in-a-cards {
+    background-color: #FCFCFD;
+    padding: 10px 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+.a-cards {
+    .fa-solid {
+        background-color: #FFF9F0;
+        color: #FF9500;
+        padding: 10px 10px;
+    }
+
+}
+
+#goals {
+    margin: 0 20px;
+}
+
+.in-g-cards {
+    background-color: #FCFCFD;
+    padding: 10px 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+.g-cards {
+    .fa-solid {
+        background-color: #FFF9F0;
+        color: #FF9500;
+        padding: 10px 10px;
+    }
+}
+
+.single-word {
+    color: #FF9500;
+}
+
+#future {
+    margin: 20px 20px;
+    background-color: #FCFCFD;
+    padding: 10px 10px;
+    border-radius: 5px;
+}
+
+.join {
+    background-color: #FF9500;
+    color: white;
+}
+
+/* contact page */
+.container-contact {
+    background-color: #F1F1F3;
+    
+}
+.container-contact{
+    h2,p,main{
+        padding:20px;
+    }
+    p
+}
+
+fieldset {
+    margin-bottom: 10px;
+}
+
+form {
+    background-color: #FCFCFD;
+    display: flex;
+    flex-direction: column;
+    margin: 10px 10px;
+}
+
+input {
+    margin-bottom: 10px;
+    background-color: #F1F1F3;
+    border: 1px solid grey;
+    padding: 10px 10px;
+    border-radius: 5px;
+}
+
+.send {
+    width: 100%;
+    background-color: #FF9500;
+    color: white;
+}
+
+textarea {
+    margin-bottom: 20px;
+}
+
+.card-info {
+    background-color: white;
+
+}
+
+.in-card-info {
+    background-color: #F1F1F3;
+    padding: 10px 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    text-align: center;
+}
 
 
+/* media query */
 @media screen and (min-width: 760px) {
+    /* media query for home desktop */
+    /* nav */
+    .head-nav {
+        ul {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        li {
+            margin-right: 10px;
+        }
+    }
+
+    /* benifits */
     .b-cards {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -365,4 +536,206 @@ footer ul{
             grid-area: card-6;
         }
     }
+
+    .view{
+        text-align: right;
+    }
+
+    /* cources */
+    .c-cards {
+        display: grid;
+        gap: 10px;
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-areas: repeat(2, 1fr);
+        grid-template-areas:
+            "cource-1 cource-2"
+            "cource-3 cource-4"
+            "cource-5 cource-6";
+
+        :nth-child(1) {
+            grid-area: cource-1;
+        }
+
+        :nth-child(2) {
+            grid-area: cource-2;
+        }
+
+        :nth-child(3) {
+            grid-area: cource-3;
+        }
+
+        :nth-child(4) {
+            grid-area: cource-4;
+        }
+
+        :nth-child(5) {
+            grid-area: cource-5;
+        }
+
+        :nth-child(6) {
+            grid-area: cource-6;
+        }
+    }
+
+    /* Testimonials */
+    .t-cards {
+        display: grid;
+        gap: 10px;
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-areas: repeat(2, 1fr);
+        grid-template-areas:
+            "review-1 review-2"
+            "review-3 review-4";
+
+        :nth-child(1) {
+            grid-area: review-1;
+        }
+
+        :nth-child(2) {
+            grid-area: review-2;
+        }
+
+        :nth-child(3) {
+            grid-area: review-3;
+        }
+
+        :nth-child(4) {
+            grid-area: review-4;
+        }
+
+    }
+
+    .price-type {
+        text-align: right;
+    }
+
+    .p-cards {
+        display: flex;
+    }
+    .in-p-cards{
+        margin-right: 10px;
+    }
+    #questions{
+        display: flex;;
+    }
+    /* about us page */
+
+    .title{
+        display: flex;
+        h2{
+            width:50%;
+        }
+        p{
+            width:50%;
+        }
+    }
+    .a-cards{
+        display: grid;
+        gap: 10px;
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-areas: repeat(2, 1fr);
+        grid-template-areas:
+            "result-1 result-2"
+            "result-3 result-4";
+
+        :nth-child(1) {
+            grid-area: result-1;
+        }
+        :nth-child(2) {
+            grid-area: result-2;
+        }
+        :nth-child(3) {
+            grid-area: result-3;
+        }
+        :nth-child(4) {
+            grid-area: result-4;
+        }
+    }
+    .g-cards{
+        display: grid;
+        gap: 10px;
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-areas: repeat(2, 1fr);
+        grid-template-areas:
+            "goal-1 goal-2"
+            "goal-3 goal-4";
+
+        :nth-child(1) {
+            grid-area: goal-1;
+        }
+        :nth-child(2) {
+            grid-area: goal-2;
+        }
+        :nth-child(3) {
+            grid-area: goal-3;
+        }
+        :nth-child(4) {
+            grid-area: goal-4;
+        }
+    }
+    /* contact page */
+    .container-contact{
+        main{
+            display: grid;
+            gap: 10px;
+            grid-template-rows: repeat(1, 1fr);
+            grid-template-areas: repeat(3, 1fr);
+            grid-template-areas:
+                "con-1 con-1 con-2";
+    
+            :nth-child(1) {
+                grid-area: con-1;
+            }
+            :nth-child(2) {
+                grid-area: con-1;
+            }
+            :nth-child(2) {
+                grid-area: con-2;
+            }
+        }
+    }
+    .card-info{
+        padding:20px;
+    }
+
+    /* footer */
+    .fotter{
+        display: flex;
+        justify-content: space-between;
+    }
+    .copy-right{
+        text-align: center;
+    }
+
 }
+    
+/* animation */
+@keyframes moveAround{
+    0%{
+    transform: translate(0,0);
+    }
+    25%{
+        transform:translate(400px, 0);
+    }
+    50%{
+        transform: translate(400px, 200px);
+    }
+    75%{
+        transform: translate(-400px, 200px) ;
+    }
+    100%{
+        transform: translate(0 0);
+    }
+}
+.banner{
+h2:hover{
+    animation: moveAround 4s;
+    animation-direction: alternate;
+}
+}
+
+.in-b-cards{
+    transform: scale(1);
+}
+.in-b-cards:hover{
+    transform: scale(1.2);

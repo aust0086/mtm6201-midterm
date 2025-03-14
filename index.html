@@ -17,8 +17,16 @@
 </head>
 
 <body>
+    <!-- container for whole page -->
     <div class="container-index">
         <header>
+            <!-- skip links -->
+             <div class="skip-link">
+                <li><a href="#cources">Cources</a></li>
+                <li><a href="./about.html">About Us</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+             </div>
             <!-- add/promotion at top -->
             <div class="add">
                 <h1>
@@ -60,7 +68,7 @@
                 </h2>
                 <p>with Online Design and Development Courses</p>
                 <p>Learn from Industry Experts and Enhance Your Skills</p>
-                <button>Explore Courses</button>
+                <button class="explore">Explore Courses</button>
                 <button>View Pricing</button>
             </div>
             <!-- website cards -->
@@ -455,9 +463,11 @@
             </section>
             <!-- questions -->
             <section id="questions">
-                <h2>Frequently Asked Questions</h2>
-                <p>Frequently Asked Questions</p>
-                <button class="view">See all FAQ's</button>
+                <div class="text-for-q">
+                    <h2>Frequently Asked Questions</h2>
+                    <p>Frequently Asked Questions</p>
+                    <button class="view">See all FAQ's</button>
+                </div>
                 <div class="questions">
                     <ul>
                         <li>
@@ -499,9 +509,21 @@
                 </div>
             </section>
         </main>
+        <!-- footer -->
         <footer>
             <div class="fotter">
                 <div class="fotter-contact">
+                    <p>
+                        <svg width="41" height="40" viewBox="0 0 41 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="0.666718" width="40" height="40" rx="6" fill="#FF9500" />
+                            <path
+                                d="M8.93918 32.3457L16.9639 24.321H24.9886V16.2963L33.0133 24.321L24.9886 32.3457H8.93918Z"
+                                fill="white" />
+                            <path
+                                d="M8.93918 16.2963L16.9639 24.321V16.2963H24.9886L33.0133 8.27161H16.9639L8.93918 16.2963Z"
+                                fill="white" />
+                        </svg>
+                    </p>
                     <p><i class="fa-solid fa-envelope"></i> hello@skillbridge.com</p>
                     <p><i class="fa-solid fa-phone"></i> + 91 91813 23 2309</p>
                     <p><i class="fa-solid fa-location-dot"></i> Somewhere in the World</p>
