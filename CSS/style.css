@@ -196,6 +196,7 @@ iframe {
     background-color: #FCFCFD;
     margin-top: 10px;
     padding: 20px;
+    border-radius: 5px;
 
     button {
         border: 1px solid grey;
@@ -238,6 +239,18 @@ iframe {
     }
 }
 
+.info-t-cards, .contact-t-cards{
+    border-radius: 5px;
+}
+.contact-t-cards{
+    border-top-left-radius:0px;
+    border-top-right-radius:0px;
+}
+.info-t-cards{
+    border-bottom-left-radius:0px;
+    border-bottom-right-radius:0px;
+}
+
 /* pricing */
 #pricing {
     padding: 20px;
@@ -259,9 +272,13 @@ iframe {
 
 .in-p-cards {
     padding: 20px;
-    background-color: #98989A;
+    background-color: #E4E4E7;
     margin-bottom: 20px;
     border-radius: 10px;
+}
+
+.in-p-cards h3{
+    text-align: center;
 }
 
 .in-p-cards li {
