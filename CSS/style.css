@@ -2,17 +2,26 @@ html {
     font-family: "Be Vietnam Pro", sans-serif;
 }
 
+.h2 {
+    font-size: 25px;
+    color: black;
+    font-weight: bold;
+}
+
 .container-index {
     color: black;
     background-color: #F1F1F3;
     font-family: "Be Vietnam Pro", sans-serif;
     margin: auto 0px;
-    
+
 }
 
-.container-index{
-    .banner,#cards,main{
-        margin:20px;
+.container-index {
+
+    .banner,
+    #cards,
+    main {
+        margin: 20px;
     }
 }
 
@@ -21,7 +30,7 @@ html {
     background-color: #FF9500;
     color: white;
     text-align: center;
-    font-size: 10px;
+    font-size: 20px;
     border-radius: 7px;
 }
 
@@ -40,20 +49,23 @@ nav li {
     justify-content: space-between;
 
 }
-.skip-link li{
+
+.skip-link li {
     list-style-type: none;
-    }
-.skip-link a{
+}
+
+.skip-link a {
     position: absolute;
-    top:-2rem;
+    top: -2rem;
     background-color: black;
     color: aliceblue;
-  }
-  .skip-link a:focus{
-    top:0;
-    color:white;
-    background-color: black;    
-  }
+}
+
+.skip-link a:focus {
+    top: 0;
+    color: white;
+    background-color: black;
+}
 
 .right {
     text-align: right;
@@ -66,8 +78,8 @@ nav li {
     display: inline-block;
 }
 
-.banner{
-    button{
+.banner {
+    button {
         margin-bottom: 20px;
     }
 }
@@ -105,11 +117,13 @@ a:active {
     border-radius: 5px;
 }
 
-.banner h2 {
+.banner .h2 {
     display: table;
     background-color: #FCFCFD;
     padding: 20px;
     border-radius: 5px;
+    align-content: center;
+
 
 }
 
@@ -221,7 +235,7 @@ iframe {
 }
 
 .info-t-cards {
-    padding: 10px 10px;
+    padding: 20px 20px;
     background-color: #FCFCFD;
     margin-bottom: 1px;
 }
@@ -229,26 +243,37 @@ iframe {
 .contact-t-cards {
     padding: 10px 10px;
     background-color: #FCFCFD;
+    /* display: flex; */
+}
 
+.read {
+    text-align: right;
+    margin-right: 20px;
+    padding-right: 10px;
+    justify-content: space-between;
 }
 
 .contact-t-cards {
 
     button {
         background-color: #F1F1F3;
+
     }
 }
 
-.info-t-cards, .contact-t-cards{
+.info-t-cards,
+.contact-t-cards {
     border-radius: 5px;
 }
-.contact-t-cards{
-    border-top-left-radius:0px;
-    border-top-right-radius:0px;
+
+.contact-t-cards {
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
 }
-.info-t-cards{
-    border-bottom-left-radius:0px;
-    border-bottom-right-radius:0px;
+
+.info-t-cards {
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
 }
 
 /* pricing */
@@ -277,7 +302,7 @@ iframe {
     border-radius: 10px;
 }
 
-.in-p-cards h3{
+.in-p-cards h3 {
     text-align: center;
 }
 
@@ -386,8 +411,8 @@ footer ul {
 
 /* about us */
 .container-about {
-    background-color: #F1F1F3;
-    
+    background-color: #98989A;
+
 }
 
 .title {
@@ -397,6 +422,8 @@ footer ul {
 #achievements {
     margin: 0 20px;
     border-radius: 5px;
+    background-color: #E4E4E7;
+    padding:10px 10px;
 }
 
 .in-a-cards {
@@ -427,6 +454,9 @@ footer ul {
 }
 
 .g-cards {
+    background-color: #E4E4E7;
+    padding:10px 10px;
+    border-radius: 5px;
     .fa-solid {
         background-color: #FFF9F0;
         color: #FF9500;
@@ -453,12 +483,17 @@ footer ul {
 /* contact page */
 .container-contact {
     background-color: #F1F1F3;
-    
+
 }
-.container-contact{
-    h2,p,main{
-        padding:20px;
+
+.container-contact {
+
+    h2,
+    p,
+    main {
+        padding: 20px;
     }
+
     p
 }
 
@@ -504,9 +539,13 @@ textarea {
     text-align: center;
 }
 
+.c-card-img {
+    width: 100%;
+}
 
 /* media query */
 @media screen and (min-width: 760px) {
+
     /* media query for home desktop */
     /* nav */
     .head-nav {
@@ -554,7 +593,7 @@ textarea {
         }
     }
 
-    .view{
+    .view {
         text-align: right;
     }
 
@@ -627,26 +666,60 @@ textarea {
     }
 
     .p-cards {
-        display: flex;
+        display: grid;
+        gap: 10px;
+        grid-template-rows: repeat(1, 1fr);
+        grid-template-areas: repeat(2, 1fr);
+        grid-template-areas:
+            "price-1 price-2";
+
+
+        :nth-child(1) {
+            grid-area: price-1;
+        }
+
+        :nth-child(2) {
+            grid-area: price-2;
+        }
     }
-    .in-p-cards{
+
+    .in-p-cards {
         margin-right: 10px;
     }
-    #questions{
-        display: flex;;
+
+    #questions {
+        display: grid;
+        gap: 10px;
+        grid-template-rows: repeat(1, 1fr);
+        grid-template-areas: repeat(2, 1fr);
+        grid-template-areas:
+            "q-1 q-2";
+
+
+        :nth-child(1) {
+            grid-area: q-1;
+        }
+
+        :nth-child(2) {
+            grid-area: q-2;
+        }
     }
+
     /* about us page */
 
-    .title{
+    .title {
         display: flex;
-        h2{
-            width:50%;
+
+        h2 {
+            width: 50%;
         }
-        p{
-            width:50%;
+
+        p {
+            width: 50%;
         }
     }
-    .a-cards{
+
+    .a-cards {
         display: grid;
         gap: 10px;
         grid-template-rows: repeat(2, 1fr);
@@ -658,17 +731,21 @@ textarea {
         :nth-child(1) {
             grid-area: result-1;
         }
+
         :nth-child(2) {
             grid-area: result-2;
         }
+
         :nth-child(3) {
             grid-area: result-3;
         }
+
         :nth-child(4) {
             grid-area: result-4;
         }
     }
-    .g-cards{
+
+    .g-cards {
         display: grid;
         gap: 10px;
         grid-template-rows: repeat(2, 1fr);
@@ -680,79 +757,94 @@ textarea {
         :nth-child(1) {
             grid-area: goal-1;
         }
+
         :nth-child(2) {
             grid-area: goal-2;
         }
+
         :nth-child(3) {
             grid-area: goal-3;
         }
+
         :nth-child(4) {
             grid-area: goal-4;
         }
     }
+
     /* contact page */
-    .container-contact{
-        main{
+    .container-contact {
+        main {
             display: grid;
             gap: 10px;
             grid-template-rows: repeat(1, 1fr);
             grid-template-areas: repeat(3, 1fr);
             grid-template-areas:
                 "con-1 con-1 con-2";
-    
+
             :nth-child(1) {
                 grid-area: con-1;
             }
+
             :nth-child(2) {
                 grid-area: con-1;
             }
+
             :nth-child(2) {
                 grid-area: con-2;
             }
         }
     }
-    .card-info{
-        padding:20px;
+
+    .card-info {
+        padding: 20px;
     }
 
     /* footer */
-    .fotter{
+    .fotter {
         display: flex;
         justify-content: space-between;
     }
-    .copy-right{
+
+    .copy-right {
         text-align: center;
     }
 
 }
-    
+
+
 /* animation */
-@keyframes moveAround{
-    0%{
-    transform: translate(0,0);
+@keyframes moveAround {
+    0% {
+        transform: translate(0, 0);
     }
-    25%{
-        transform:translate(400px, 0);
+
+    25% {
+        transform: translate(400px, 0);
     }
-    50%{
+
+    50% {
         transform: translate(400px, 200px);
     }
-    75%{
-        transform: translate(-400px, 200px) ;
+
+    75% {
+        transform: translate(-400px, 200px);
     }
-    100%{
+
+    100% {
         transform: translate(0 0);
     }
 }
-.banner{
-h2:hover{
-    animation: moveAround 4s;
-    animation-direction: alternate;
-}
+
+.banner {
+    h2:hover {
+        animation: moveAround 4s;
+        animation-direction: alternate;
+    }
 }
 
-.in-b-cards{
+.in-b-cards {
     transform: scale(1);
 }
-.in-b-cards:hover{
+
+.in-b-cards:hover {
     transform: scale(1.2);

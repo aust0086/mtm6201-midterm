@@ -21,18 +21,18 @@
     <div class="container-index">
         <header>
             <!-- skip links -->
-             <div class="skip-link">
+            <div class="skip-link">
                 <li><a href="#cources">Cources</a></li>
                 <li><a href="./about.html">About Us</a></li>
                 <li><a href="#pricing">Pricing</a></li>
                 <li><a href="./contact.html">Contact</a></li>
-             </div>
+            </div>
             <!-- add/promotion at top -->
             <div class="add">
-                <h1>
+                <div class="h1" role="heading" aria-level="1">
                     Free Courses <i class="fa-solid fa-star"></i> Sale Ends Soon, Get It Now <i
                         class="fa-solid fa-arrow-right-long"></i>
-                </h1>
+                </div>
             </div>
             <!-- navagation -->
             <nav class="head-nav">
@@ -63,9 +63,9 @@
             </nav>
             <!-- banner -->
             <div class="banner">
-                <h2>
+                <div class="h2" role="heading" aria-level="2">
                     <i class="fa-solid fa-bolt"></i> Unlock Your Creative Potential
-                </h2>
+                </div>
                 <p>with Online Design and Development Courses</p>
                 <p>Learn from Industry Experts and Enhance Your Skills</p>
                 <button class="explore">Explore Courses</button>
@@ -240,7 +240,7 @@
         <main>
             <!-- benefits -->
             <section id="benefits">
-                <h2>Benefits</h2>
+                <div class="h2" role="heading" aria-level="2">Benefits</div>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id quod ipsam harum fugit minus rem delectus
                     doloribus quidem accusantium quis fugiat odio, ullam nemo eius iusto. Repudiandae ab impedit
                     voluptatibus!</p>
@@ -288,13 +288,23 @@
             </section>
             <!-- cources -->
             <section id="cources">
-                <h2>Our Courses</h2>
+                <div class="h2" role="heading" aria-level="2">Our Courses</div>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi provident magni incidunt vero
                     assumenda ullam laudantium porro, facilis earum? Sit architecto nam neque porro eveniet quia fugiat
                     temporibus maxime ex.</p>
                 <button class="view">View All</button>
                 <div class="c-cards">
                     <div class="in-c-cards">
+                        <div ">
+                            <picture class=" c-card-img">
+                            <source srcset="images/web-500x500.avif" media="(min-width: 760px)" />
+
+                            <source srcset="images/web-150x150.avif" media="(min-width: 100px)" />
+
+                            <img class="orig-img" src="images/web-150x150.avif" alt="">
+                            </picture>
+
+                        </div>
                         <button>4 Weeks</button>
                         <button>Beginner</button>
                         <h3>By John Smith</h3>
@@ -305,6 +315,15 @@
 
                     </div>
                     <div class="in-c-cards">
+                        <div>
+                            <picture class="c-card-img">
+                                <source srcset="images/ux-500x500.avif" media="(min-width: 760px)" />
+
+                                <source srcset="images/ux-150x150.avif" media="(min-width: 100px)" />
+
+                                <img class="orig-img" src="images/ux-150x150.avif" alt="">
+                            </picture>
+                        </div>
                         <button>6 Weeks</button>
                         <button>Intermediate</button>
                         <h3>By Emily Johnson</h3>
@@ -315,6 +334,15 @@
                         <button class="get-it">Get it Now</button>
                     </div>
                     <div class="in-c-cards">
+                        <div>
+                            <picture class="c-card-img">
+                                <source srcset="images/app-dev-500x500.jpg" media="(min-width: 760px)" />
+
+                                <source srcset="images/app-dev-150x150.jpg" media="(min-width: 100px)" />
+
+                                <img class="orig-img" src="images/app-dev-150x150.jpg" alt="">
+                            </picture>
+                        </div>
                         <button>8 Weeks</button>
                         <button>Intermediate</button>
                         <h3> By David Brown</h3>
@@ -324,6 +352,15 @@
                         <button class="get-it">Get It Now</button>
                     </div>
                     <div class="in-c-cards">
+                        <div>
+                            <picture class="c-card-img">
+                                <source srcset="images/graphic-design-500x500.avif" media="(min-width: 760px)" />
+
+                                <source srcset="images/graphic-design-150x150.avif" media="(min-width: 100px)" />
+
+                                <img class="orig-img" src="images/graphic-desing-150x150.avif" alt="">
+                            </picture>
+                        </div>
                         <button>10 Weeks</button>
                         <button>Beginer</button>
                         <h3>By Sarah Thompson</h3>
@@ -334,6 +371,15 @@
                         <button class="get-it">Get It Now</button>
                     </div>
                     <div class="in-c-cards">
+                        <div>
+                            <picture class="c-card-img">
+                                <source srcset="images/front-end-500x500.avif" media="(min-width: 760px)" />
+
+                                <source srcset="images/front-end-150x150.avif" media="(min-width: 100px)" />
+
+                                <img class="orig-img" src="images/front-end-150x150.avif" alt="">
+                            </picture>
+                        </div>
                         <button>10 Weeks</button>
                         <button>Intermediate</button>
                         <h3>By Michael Adams</h3>
@@ -343,6 +389,15 @@
                         <button class="get-it">Get It Now</button>
                     </div>
                     <div class="in-c-cards">
+                        <div>
+                            <picture class="c-card-img">
+                                <source srcset="images/java-500x500.webp" media="(min-width: 760px)" />
+
+                                <source srcset="images/java-150x150.webp" media="(min-width: 100px)" />
+
+                                <img class="orig-img" src="images/ux-150x150.webp" alt="">
+                            </picture>
+                        </div>
                         <button>6 Weeks</button>
                         <button>Advanced</button>
                         <h3>By Jennifer Wilson</h3>
@@ -356,7 +411,7 @@
             </section>
             <!-- testimonials -->
             <section id="Testimonials">
-                <h2>Our Testimonials</h2>
+                <div class="h2" role="heading" aria-level="2">Our Testimonials</div>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum vero adipisci recusandae suscipit
                     voluptates assumenda quia, veniam molestiae maxime impedit voluptas corporis dolores neque,
                     aspernatur a eveniet id et quas!</p>
@@ -370,6 +425,7 @@
                                 highly recommend it! </p>
                         </div>
                         <div class="contact-t-cards">
+                            <img src="./images/sarah-100x100.avif" alt="">
                             <h3>Sarah L</h3>
                             <button class="read">Read Full Story</button>
                         </div>
@@ -382,6 +438,7 @@
                                 career now. Thank you!</p>
                         </div>
                         <div class="contact-t-cards">
+                            <img src="/images/jason-100x100.avif" alt="">
                             <h3>Jason M</h3>
                             <button class="read">Read Full Story</button>
                         </div>
@@ -394,6 +451,7 @@
                             </p>
                         </div>
                         <div class="contact-t-cards">
+                            <img src="/images/emily-100x100.avif" alt="">
                             <h3>Emily R</h3>
                             <button class="read">Read Full Story</button>
                         </div>
@@ -406,6 +464,7 @@
                                 significantly. I'm grateful for this course!</p>
                         </div>
                         <div class="contact-t-cards">
+                            <img src="/images/michale-100x100.avif" alt="">
                             <h3>Michale K</h3>
                             <button class="read">Read Full Story</button>
                         </div>
@@ -414,7 +473,7 @@
             </section>
             <!-- pricing  -->
             <section id="pricing">
-                <h2>Our Pricing</h2>
+                <div class="h2" role="heading" aria-level="2">Our Pricing</div>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti sapiente corporis iste quam quo
                     est. In illo veritatis modi porro, exercitationem at, possimus eum unde, odio provident sapiente
                     ducimus nisi?</p>
@@ -464,7 +523,7 @@
             <!-- questions -->
             <section id="questions">
                 <div class="text-for-q">
-                    <h2>Frequently Asked Questions</h2>
+                    <div class="h2" role="heading" aria-level="2">Frequently Asked Questions</div>
                     <p>Frequently Asked Questions</p>
                     <button class="view">See all FAQ's</button>
                 </div>
@@ -530,7 +589,7 @@
                 </div>
                 <div class="fotter-two-nav">
                     <div class="fotter-home">
-                        <h2>Home</h2>
+                        <div class="h2" role="heading" aria-level="2">Home</div>
                         <ul>
                             <li><a href="#benefits">Benefits</a></li>
                             <li><a href="#cources">Our Cources</a></li>
@@ -539,7 +598,7 @@
                         </ul>
                     </div>
                     <div class="footer-about">
-                        <h2>About Us</h2>
+                        <div class="h2" role="heading" aria-level="2">About Us</div>
                         <ul>
                             <li>Company</li>
                             <li>Achievements</li>
@@ -548,7 +607,7 @@
                     </div>
                 </div>
                 <div class="fotter-profiles">
-                    <h2>Social Profiles</h2>
+                    <div class="h2" role="heading" aria-level="2">Social Profiles</div>
                     <i class="fa-brands fa-facebook"></i>
                     <i class="fa-brands fa-twitter"></i>
                     <i class="fa-brands fa-linkedin"></i>
